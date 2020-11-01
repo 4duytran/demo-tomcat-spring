@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello from docker - Tomcat</title>
+</head>
+<body>
+
+    <div id="app">
+        <h1 th:text="${welcome}"></h1>
+
+        <ul th:each="user: ${users}">
+            <li th:text="${user.id}"></li>
+            <li th:text="${user.name}"></li>
+            <li th:text="${user.age}"></li>
+            <li th:text="${user.category.name}"></li>
+        </ul>
+
+    </div>
+
+</body>
+</html>
